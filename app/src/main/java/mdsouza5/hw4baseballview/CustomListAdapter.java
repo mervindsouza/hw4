@@ -22,11 +22,11 @@ public class CustomListAdapter extends ArrayAdapter<String> {
     private final Integer[] Imagename;
     private final String[] ListItemsDescription;
 
-    public CustomListAdapter(Activity context, String[] content, String[] content2, Integer[] imagename) {
-        super(context, R.layout.myteams, content);
+    public CustomListAdapter(Activity context, String[] listitemsname, String[] listitemsdescription, Integer[] imagename) {
+        super(context, R.layout.myteams, listitemsname);
         this.Context = context;
-        this.ListItemsName = content;
-        this.ListItemsDescription = content2;
+        this.ListItemsName = listitemsname;
+        this.ListItemsDescription = listitemsdescription;
         this.Imagename = imagename;
     }
 

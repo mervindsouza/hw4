@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(listAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(), ListItemsName[i], Toast.LENGTH_LONG).show();
+            public void onItemClick(AdapterView<?> adapterView, View view, int positionat, long l) {
+                Toast.makeText(getApplicationContext(), ListItemsName[positionat], Toast.LENGTH_LONG).show();
             }
         });
     }
